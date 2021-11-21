@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Netflix</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <div class="nav-netflix-logo">
+          <img
+            src="http://www.freepnglogos.com/uploads/netflix-logo-0.png"
+            alt="nav-brand-logo"
+            class="actual-logo"
+          />
+        </div>
+
+        <div class="nav-items-container">
+          
+            <mat-form-field appearance="outline" class="mat-form-field mat-form-field-appearance-outline mat-form-field-outline "
+            [hideRequiredMarker]="hideRequiredControl.value"
+            [floatLabel]="floatLabelControl.value">
+            <mat-select>
+            <mat-option value="option">English</mat-option>
+            <mat-option value="option">Tamil</mat-option>
+            </mat-select>
+            <mat-label style="color: white;"><mat-icon >Language</mat-icon><b>{{floatLabelControl.value}}</b> </mat-label>
+            </mat-form-field>
+
+          <div class="nav-item-sign_in-btn-container">
+            <button mat-flat-button id="signinBtn" (click)="onClick()">Sign In </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="box-1">
+        <div class="hero_bg_image_container">
+          <img
+            src="http://s3-us-west-2.amazonaws.com/techvibes/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg"
+            alt="bg_image"
+            class="hero_bg_image"
+          />
+        </div>
+        <div class="hero_bg_overlay"></div>
+
+        <div class="hero_card">
+          <h1 class="hero_title">
+            Unlimited movies, TV<br />
+            shows and more.
+          </h1>
+          <p class="hero_subtitle">Watch anywhere. Cancel anytime</p>
+          <p class="hero-description">
+            Ready to watch? Enter your email to create or restart your
+            membership
+          </p>
+          
+            
+          <span class="email-form-container">
+              <mat-form-field appearance="legacy" class="email_field" >
+                <mat-label style="color: gray;">Email Address</mat-label>
+                <input
+                type="email"
+                for="email"
+                matInput
+              />
+              </mat-form-field>
+            <button mat-flat-button (click)="gotoSignUpForm()">Get Started ></button>
+          </span>
+        </div>
+      </section>
+
+      <section class="fea-container">
+        <div class="fea">
+          <div class="fea-details">
+            <h3 class="fea-title">Enjoy on your TV.</h3>
+            <h5 class="fea-sub-title">
+              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              Blu-ray players and more.
+            </h5>
+          </div>
+
+          <div class="fea-image-container">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+              alt="box-1-image"
+              class="fea-image"
+            />
+            <div class="fea-bg-video-container">
+              <video autoplay loop class="fea-bg-video">
+                <source
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <!-- F stands for Feature -->
+        <!-- ------------------- F-2 -->
+
+        <div class="fea">
+          <div class="fea-details">
+            <h3 class="fea-title">Download your shows to watch offline.</h3>
+            <h5 class="fea-sub-title">
+              Save your favourites easily and always have something to watch.
+            </h5>
+          </div>
+
+          <div class="fea-image-container">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+              alt="box-1-image"
+              class="fea-image"
+            />
+          </div>
+        </div>
+
+        <!-- ------------------- F-3 -->
+
+        <div class="fea">
+          <div class="fea-details">
+            <h3 class="fea-title">Watch everywhere.</h3>
+            <h5 class="fea-sub-title">
+              Stream unlimited movies and TV shows on your phone, tablet,
+              laptop, and TV.
+            </h5>
+          </div>
+
+          <div class="fea-image-container">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+              alt="box-1-image"
+              class="fea-image"
+            />
+            <div class="fea-bg-video-container">
+              <video autoplay loop class="fea-bg-video">
+                <source
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------------------- F-4 -->
+
+        <div class="fea">
+          <div class="fea-details">
+            <h3 class="fea-title">Create profiles for children.</h3>
+            <h5 class="fea-sub-title">
+              Send children on adventures with their favourite characters in a
+              space made just for them—free with your membership.
+            </h5>
+          </div>
+
+          <div class="fea-image-container">
+            <img
+              src="https://occ-0-2164-64.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png?r=5cf"
+              alt="box-1-image"
+              class="fea-image"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+

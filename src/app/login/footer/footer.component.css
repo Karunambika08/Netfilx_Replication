@@ -1,0 +1,35 @@
+.container{
+    width: auto;
+    height: auto;
+    padding: 80px;
+    padding-top: 50px;
+    border: transparent;
+    margin-top: 20px;
+    background-color: black;
+    opacity: 0.95;
+}
+.call{
+    margin: 0.5em;
+}
+a{
+    color: grey;
+    font-size: 14px;
+    margin: 15px;
+    margin-right: 10em;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.cookie{
+    margin-right: 3em;
+}
+
+
+header{
+    color: white;
+    margin: bottom 15px;
+    margin: 10px;
+}

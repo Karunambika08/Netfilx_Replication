@@ -1,0 +1,23 @@
+body{
+  height: fit-content;
+  width: auto;
+  background-repeat: inherit;
+  background-image : url('src/assets/images/netflix_bg.png');
+  /* background-color: black; */
+}
+.form-container {
+  height: 120vh;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  justify-content: safe;
+  align-items: center; /* Veritical center */  
+}
+.footer-container{
+  height: auto;
+  width: auto;
+  justify-content:last baseline;
+  justify-content: safe;
+  align-items: center;
+}
+

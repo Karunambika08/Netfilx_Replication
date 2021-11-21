@@ -1,0 +1,74 @@
+<!-- <header>
+  <nav class="nav-container">
+
+      <div class="nav-netflix-logo">
+        <img
+          src="http://www.freepnglogos.com/uploads/netflix-logo-0.png"
+          alt="nav-brand-logo"
+          class="actual-logo"
+        />
+      </div>
+  </nav>
+</header> -->
+<form  [formGroup] = "loginDetail">
+  <h1><b>{{title}}</b></h1>
+  <p class="status">{{status}}</p>
+  <div class="row email-class">
+    <mat-form-field appearance="fill">
+      <mat-label style="color:rgb(128, 128, 128)">Email or Phone Number</mat-label>
+        <input
+          type="email"
+          formControlName ="email"
+          matInput 
+        />
+      </mat-form-field>
+      <mat-error
+          *ngIf=
+              "loginDetail.get('email')?.touched &&
+              loginDetail.get('email').hasError('email')"> 
+              Please enter valid email   
+      </mat-error> 
+      <mat-error
+        *ngIf=
+          "loginDetail.get('email')?.touched &&
+          loginDetail.get('email').hasError('required')">
+            Email is required
+      </mat-error>
+  </div>
+  
+  <div class="row password-class">
+    <mat-form-field>
+      <mat-label style="color:rgb(128, 128, 128)">Password</mat-label>
+      <input
+        type="password"
+        matInput placeholder="Password"
+        formControlName="password"
+      />
+    </mat-form-field>
+    <mat-error
+        *ngIf=
+          "loginDetail.get('email')?.touched &&
+          loginDetail.get('email').hasError('required')">
+            Email is required
+      </mat-error>
+      
+    <!-- <mat-error *ngIf=
+        "control('password')?.touched" >
+        <p>Password required</p>
+    </mat-error> -->
+  </div>
+  
+  <button mat-flat-button class="btn btn-binary" (click)="clickfunc()">Sign In</button>  
+  
+  <label id="remember" class="left">
+    <input class="remember-me" type="checkbox" checked>Remember me
+    <a href="#" class="help">Need help?</a>
+  </label>
+  
+  <a href="https//facebook.com" class="fb">Login with facebook<mat-icon>facebook</mat-icon></a>
+  
+  <span class="newsignup">New to Netflix?
+  <a id="signup" routerLink="/signup"  routerLinkActive="active"> Sing up now</a>
+  </span>
+</form>
+<!-- {{loginDetail.value | json}} -->

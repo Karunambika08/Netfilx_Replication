@@ -1,0 +1,35 @@
+<body>
+    <header>
+        <nav class="nav-container">
+          <div class="nav-netflix-logo">
+            <img
+              src="http://www.freepnglogos.com/uploads/netflix-logo-0.png"
+              alt="nav-brand-logo"
+              class="actual-logo"
+            />
+          </div>
+        </nav>
+    </header>
+    <div class="content-container">
+        <h2 class="flex-heading">Who's Watching?</h2><br>
+        <div class="flexbox-container flexbox-txtcolor">
+          <div class="flexbox-subcontainer container-1">
+            <div class="flexbox-item flexbox-item-1" (click)="clickfunc()"></div>
+            <div>A</div>
+          </div>
+          <div class="flexbox-subcontainer container-1">
+            <div class="flexbox-item flexbox-item-2" (click)="clickfunc()"></div>
+            <div>B</div>
+          </div> 
+          <div class="flexbox-subcontainer container-1">
+            <div class="flexbox-item flexbox-item-3" (click)="clickfunc()"></div>
+            <div>C</div>
+          </div>  
+          <div class="flexbox-subcontainer container-1">
+            <div class="flexbox-item flexbox-item-4" routerLink="/whos-watching/add" routerLinkActive="active"></div>
+            <div>D</div>
+          </div>  
+        
+        </div>
+    </div>
+</body>
